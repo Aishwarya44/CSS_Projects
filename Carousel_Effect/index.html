@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corousel Effect</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container-img{
+            width: 60vw;
+            height: 40rem;
+            border-radius: 1rem;
+            background-image: url("images/download1.jfif");
+            background-size: cover;
+            animation: gallery 20s linear infinite;
+        }
+            @keyframes gallery {
+                0% {
+                    background-image: url("images/download1.jfif");
+                }
+                20% {
+                    background-image: url("images/download2.jfif");
+                }
+                40% {
+                    background-image: url("images/download3.jfif");
+                }
+                60% {
+                    background-image: url("images/images4.jfif");
+                }
+                80% {
+                    background-image: url("images/images5.jfif");
+                }
+                100% {
+                    background-image: url("images/download6.jfif");
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container-img"></div>
+</body>
+</html>
